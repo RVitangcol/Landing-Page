@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #841395, #5b0189);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    padding: 1rem 0;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.hero-text {
+    margin-top: 20px;
+}
+
+.hero-text h1 {
+    font-size: 5rem;
+    margin-bottom: -9px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-text .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.hero-text .btn:hover {
+    background-color: #555;
+}
+
+
+section {
+    position: relative;
+    padding: 60px 20px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 800px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+section button {
+    display: inline-block;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #841395, #5b0189);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    padding: 16px 32px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+section button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+section button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+section button:hover span {
+    padding-right: 15px;
+}
+
+section button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* Hover text styles */
+.hover-section .hover-text {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hover-section:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.hover-section:hover .hover-text {
+    display: block;
+}
+
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+
+}
+

@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #841395, #5b0189);
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    padding: 1rem 0;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.hero-text {
+    margin-top: 20px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-text .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.hero-text .btn:hover {
+    background-color: #555;
+}
+
+#application {
+    padding: 60px 20px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+#application h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#application .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#application label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#application input,
+#application textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#application button {
+    display: inline-block;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #841395, #5b0189);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    padding: 10px 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#application button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#application button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+}
+
+#application button:hover span {
+    padding-right: 10px;
+}
+
+#application button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}

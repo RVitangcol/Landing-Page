@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <!-- Header section with clickable logo -->
+    <header>
+        <div class="header-content">
+            <a href="Landing Page.html">
+                <img src="img/logo.png" alt="Logo" class="logo">
+            </a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="Landing Page.html#features">Features</a></li>
+                    <li><a href="Landing Page.html#about">About</a></li>
+                    <li><a href="Landing Page.html#contact">Contact</a></li>
+                    <li><a href="Applying.html">Positions</a></li>
+                    <li><a href="Applicant.html">Apply</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero-text">
+            <h1>Application</h1>
+            <p>Fill this from to start your journey today!</p>
+        </div>
+    </header>
+
+    <!-- Application Form section -->
+    <section id="application">
+        <h2>Job Application Form</h2>
+        <form action="thanks.html" method="get">
+            <div class="form-group">
+                <label for="applicant-name">Applicant Name:</label>
+                <input type="text" id="applicant-name" name="applicant-name" required>
+            </div>
+            <div class="form-group">
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="job-title" name="job-title" required>
+            </div>
+            <div class="form-group">
+                <label for="work-details">Work Details:</label>
+                <textarea id="work-details" name="work-details" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="expected-salary">Expected Salary:</label>
+                <input type="number" id="expected-salary" name="expected-salary" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-email">Contact Email:</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+            </div>
+            <button type="submit"><span>Submit</span></button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Proficio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="Landing Page.html">
+                <img src="img/logo.png" alt="Logo" class="logo">
+            </a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="Landing Page.html#home">Home</a></li>
+                    <li><a href="Landing Page.html#about">About</a></li>
+                    <li><a href="Landing Page.html#contact">Contact</a></li>
+                    <li><a href="Applying.html">Positions</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero-text">
+            <h1>Post a Job</h1>
+            <p>Submit a job posting</p>
+        </div>
+    </header>
+    <section id="post-job">
+        <h2>Job Posting Form</h2>
+        <form action="thanks2.html" method="post">
+            <div class="form-group">
+                <label for="company-name">Company Name:</label>
+                <input type="text" id="company-name" name="company-name" required>
+            </div>
+            <div class="form-group">
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="job-title" name="job-title" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-email">Contact Email:</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+            </div>
+            <div class="form-group">
+                <label for="job-description">Job Description:</label>
+                <textarea id="job-description" name="job-description" rows="5" required></textarea>
+            </div>
+            <button type="submit">
+                <span>Submit</span>
+            </button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; Proficio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
